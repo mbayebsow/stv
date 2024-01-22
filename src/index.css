@@ -7,8 +7,8 @@
 }
 
 .carousel-item.visible {
-  opacity: 1;
+  opacity: 0.7;
 }
 .carousel-item.active {
-  margin-left: 5%;
+  opacity: 1;
 }

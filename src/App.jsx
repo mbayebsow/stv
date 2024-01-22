@@ -160,10 +160,7 @@ function App() {
           inactive ? "-translate-x-full" : "translate-x-0"
         } h-screen w-screen transition-all duration-100 ease-out flex absolute left-0 top-0 bottom-0 z-50`}
       >
-        <div className="absolute top-0 left-0 right-0 h-32 z-10 bg-gradient-to-b from-primary-400" />
-
         <div className="flex w-3/5 bg-primary-400 relative z-0 pl-10">
-          <div className="absolute bottom-0 left-0 right-0 h-32 z-10 bg-gradient-to-t from-primary-400" />
           <div className="w-2/5 h-screen">
             {/*<CategoriesList />*/}
             <VerticalCarousel data={data.slides} leadingText="Group" />

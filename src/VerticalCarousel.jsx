@@ -71,8 +71,8 @@ const VerticalCarousel = ({ data, leadingText }) => {
             }
           )}
           style={{
-            top: windowSize.current[1] / 2 + determinePlacement(i),
-            transform: `translateY(${determinePlacement(i) - 35}px)`,
+            top: windowSize.current[1] / 2 + determinePlacement(i) / 2,
+            transform: `translateY(${determinePlacement(i) - 20}px)`,
           }}
         >
           <div className="w-full flex gap-5 items-start">
