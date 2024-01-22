@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.carousel-item {
+  transition: transform 0.1s ease, opacity 0.4s ease;
+}
+
+.carousel-item.visible {
+  opacity: 1;
+}
+.carousel-item.active {
+  margin-left: 5%;
+}
