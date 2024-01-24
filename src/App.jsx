@@ -1,9 +1,10 @@
-import { useState, useEffect, useRef } from "react";
-import ReactPlayer from "react-player";
+import { useState, useEffect } from "react";
 import channels from "./channels.json";
 import GroupList from "./components/group-list";
 import ChannelList from "./components/channel-list";
-
+import Player from "./components/player";
+import { Play } from "lucide-react";
+import PlayerControl from "./components/player-control";
 
 function App() {
   const [channelIndex, setChannelIndex] = useState(0);
@@ -67,40 +68,22 @@ function App() {
       <div
         className={` ${
           inactive ? "-translate-x-full" : "translate-x-0"
-        } h-screen w-screen transition-all p-5 bg-gradient-to-r from-black/80 duration-100 ease-out flex absolute left-0 top-0 bottom-0 z-50`}
+        } h-screen w-screen transition-all p-0 bg-gradient-to-r from-black/90 duration-100 ease-out flex absolute left-0 top-0 bottom-0 z-50`}
       >
         <div className="flex w-1/2 bg-white/10 overflow-hidden rounded-2xl shadow-2xl backdrop-blur-2xl relative z-0 pl-10">
           <div className="w-2/5 h-screen">
-            <GroupList/>
+            <GroupList />
           </div>
           <div className="w-3/5 h-screen px-5">
-            <ChannelList/>
+            <ChannelList />
           </div>
         </div>
 
-        <div className="w-1/2 h-screen "></div>
+        <div className="w-1/2 h-screen bg-black/20">
+          <PlayerControl />
+        </div>
       </div>
-
-      <div className="absolute w-screen h-screen top-0 left-0 bottom-0 right-0 z-10 flex justify-center items-center">
-        {playerState === 0 && (
-          <div className="absolute top-0 left-0 right-0 bottom-0 w-full h-full">
-            <div className="absolute top-0 left-0 right-0 bottom-0 backdrop-blur-x animate-puls"></div>
-            <img
-              className="w-full h-full object-cover"
-              src={channels[channelIndex].logo}
-            />
-          </div>
-        )}
-        {playerState === 2 && (
-          <span className="relative flex text-xl text-white text-center">
-            Une erreur c'est produite. <br /> Changement de chaine dans 5s
-          </span>
-        )}
-      </div>
-
-      <div className="w-screen h-screen object-cover relative z-0">
-        {/*<ReactPlayer className="react-player z-0" url={channels[channelIndex].url} width="100%" height="100%" onReady={() => setPlayerState(1)} onError={() => setPlayerState(2)} playing={false} />*/}
-      </div>
+      <Player />
     </div>
   );
 }
