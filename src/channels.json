@@ -1,5 +1,107 @@
 [
     {
+        "name": "Sky Sport",
+        "group": 1,
+        "logo": "https://play-lh.googleusercontent.com/-cIoEETaueLkWYUbAizN98H20ES55XwYqvjRwyP7tZPFy4Yrf6xMruUulOooEe47_pU=w240-h480-rw",
+        "url": "https://app.leatdev.com:70/skysport/index.m3u8"
+    },
+   {
+      "name":"Info Sport",
+      "url":"https://app.leatdev.com:70/infosport/index.m3u8",
+      "logo":"https://telephone.fr/images/empresas/359353/m/infosport-.jpg",
+        "group": 1
+   },
+   {
+      "name":"Canal + Sport",
+      "url":"https://app.leatdev.com:70/canalplus/index.m3u8",
+      "logo":"https://upload.wikimedia.org/wikipedia/commons/1/1a/Canal%2B_Sport_2015.png",
+        "group": 1
+   },
+   {
+      "name":"Canal + Sport 2",
+      "url":"https://app.leatdev.com:70/canalplus2/index.m3u8",
+      "logo":"https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Canal%2B_Sport_2_PL.png/800px-Canal%2B_Sport_2_PL.png",
+        "group": 1
+   },
+   {
+      "name":"Super Sport 1",
+      "url":"https://app.leatdev.com:70/supersport1/index.m3u8",
+      "logo":"https://play-lh.googleusercontent.com/7cdCgpOqQjkT4parAtkRbVB98RneZmrmFgvASJUGNa2X5ZzYaKqJGu1-BE4aTxPbZJpM",
+        "group": 1
+   },
+    {
+        "name": "RTS 1",
+        "group": 2,
+        "logo": "https://tvestatic.acan.group/larts/images/0c96c025b9f015b374e148b4ea6d55ca.png",
+        "url": "https://cdn.live.acan.group/rts1_all/index.m3u8"
+    },
+    {
+        "name": "RTS 2",
+        "group": 2,
+        "logo": "https://tvestatic.acan.group/larts/images/01fe3b571e0d13e704a8912fe6d43feb.png",
+        "url": "https://cdn.live.acan.group/rts2.stream/index.m3u8"
+    },
+    {
+        "name": "Walf tv",
+        "group": 2,
+        "logo": "https://www.seneplus.com/sites/default/files/raw_photos/walftv_0.jpeg",
+        "url": "https://app.leatdev.com:70/walftv/index.m3u8"
+    },
+    {
+        "name": "7tv",
+        "group": 2,
+        "logo": "https://i.vimeocdn.com/video/977863353-18e440b9b70e4a6500a555e883f28e6abb159dc26010dfe8b0f19267b01bfda3-d_640?f=webp",
+        "url": "https://app.leatdev.com:70/septtv/index.m3u8"
+    },
+    {
+        "name": "Leral tv",
+        "group": 2,
+        "logo": "https://play-lh.googleusercontent.com/eFjdwaUe2Z0FaEnbsM_9T__tRUg2HOx3XeIal-Jhc298A_IVQQ8VQYV_PG954402fw",
+        "url": "https://app.leatdev.com:70/leraltv/index.m3u8"
+    },
+    {
+        "name": "Sentv",
+        "group": 2,
+        "logo": "https://www.seneplus.com/sites/default/files/styles/section_hero/public/raw_photos/sentv-logo_1.png?itok=5zaHQ7VQ",
+        "url": "https://app.leatdev.com:70/sentv/index.m3u8"
+    },
+    {
+        "name": "Tfm",
+        "group": 2,
+        "logo": "https://www.musicinafrica.net/sites/default/files/styles/profile_images_large/public/images/music_professional_profile/201407/tfm.jpg",
+        "url": "https://app.leatdev.com:70/tfm/index.m3u8"
+    },
+    {
+        "name": "2stv",
+        "group": 2,
+        "logo": "https://thumb.canalplus.pro/bran/unsafe/2880x996/image/62389c7ca9656/uploads/media/COVER_2STV_2022.png",
+        "url": "https://app.leatdev.com:70/2stv/index.m3u8"
+    },
+   {
+        "name":"ASFIYAHI",
+        "url":"https://app.leatdev.com:70/asfiyahi/index.m3u8",
+        "logo":"https://play-lh.googleusercontent.com/yL_VJCmzx92ff9HbFMcgNWWT_AislLC6OXNcjnErnU1J5Zi9N9o6JWqT1GpLtypf9Tg",
+        "group": 2
+   },
+   {
+      "name":"LOUGATV",
+      "url":"https://app.leatdev.com:70/lougatv/index.m3u8",
+      "logo":"https://play-lh.googleusercontent.com/37mSsTAUyC_aDTtUytWV_pW2vmORUBh_aPGJUHaEkwmuS81t9dv-7Bo8ceLzFaikaQ",
+        "group": 2
+   },
+   {
+      "name":"TOUBATV",
+      "url":"https://app.leatdev.com:70/toubatv/index.m3u8",
+      "logo":"https://play-lh.googleusercontent.com/6JcoTdtEMQuEqoBtpmTmjOoiHhN0z3_5wE2TTFoOkl02lNWFkRqEYsTVJwIsaCupPOw",
+        "group": 2
+   },
+   {
+      "name":"AFRICA7",
+      "url":"https://app.leatdev.com:70/africa7/index.m3u8",
+      "logo":"https://www.dakaractu.com/photo/art/default/3116745-4452734.jpg?v=1310080047",
+        "group": 2
+   },
+    {
         "name": "Terra Mater WILD",
         "group": 4,
         "logo": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ATBD2700001KY_20240117T032619SQUARE.png_20240117032620.png",
@@ -3479,6 +3581,12 @@
         "logo": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESAJ45000181E_20220323T081350SQUARE.png_20220323081353.png",
         "url": "https://i.mjh.nz/SamsungTVPlus/ESAJ45000181E.m3u8"
     },
+   {
+        "group": 3,
+      "name":"TF1",
+      "url":"https://app.leatdev.com:70/tf1/index.m3u8",
+      "logo":"https://cdn.edi-static.fr/image/upload/c_scale,dpr_auto,f_auto,q_auto,w_auto/c_limit,w_auto/v1/Img/BREVE/2021/9/364588/TF1-PUB-presente-ses-nouveaux-formats-F.jpg"
+   },
     {
         "name": "Plus belle la vie",
         "group": 3,
@@ -3491,6 +3599,12 @@
         "logo": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/FRBD410000783_20231213T034713SQUARE.png_20231213034713.png",
         "url": "https://i.mjh.nz/SamsungTVPlus/FRBD410000783.m3u8"
     },
+   {
+      "name":"FRANCE 24",
+      "url":"https://youtu.be/l8PMl7tUDIE",
+        "group": 3,
+      "logo":"https://upload.wikimedia.org/wikipedia/fr/thumb/2/24/Logos_FRANCE24_RVB_2013.svg/1200px-Logos_FRANCE24_RVB_2013.svg.png"
+   },
     {
         "name": "Euronews en direct",
         "group": 3,

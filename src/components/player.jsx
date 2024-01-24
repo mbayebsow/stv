@@ -14,7 +14,7 @@ function Player() {
   return (
     channels.length > 0 && (
       <>
-        <div className="absolute w-screen h-screen top-0 left-0 bottom-0 right-0 z-10 flex justify-center items-center">
+        <div className="absolute w-screen h-screen top-0 left-0 bottom-0 right-0 -z-10 flex justify-center items-center">
           {playerState === 1 && (
             <div className="absolute top-0 left-0 right-0 bottom-0 w-full h-full">
               <div className="absolute top-0 left-0 right-0 bottom-0 backdrop-blur-x animate-puls"></div>

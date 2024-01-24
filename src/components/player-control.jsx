@@ -1,7 +1,7 @@
 import { Pause, Play, XOctagon } from "lucide-react";
 import useGlobalStore from "../stores/useGlobalStore";
 
-function PlayerControl() {
+function PlayerControl({inactive}) {
   const {
     groups,
     channels,
@@ -13,7 +13,9 @@ function PlayerControl() {
   } = useGlobalStore();
 
   return (
-    <div className="w-full h-full flex flex-col justify-end p-10 bg-gradient-to-t from-black/60">
+    <div className={`${
+          inactive ? "translate-x-full" : "translate-x-0"
+        } w-1/2 h-full flex flex-col justify-end p-10 bg-gradient-to-t from-black/90`}>
       <div className="w-full flex items-center gap-5">
         {channels.length > 0 && (
           <>
@@ -56,7 +58,7 @@ function PlayerControl() {
               )}
               {playerState === 3 && (
                 <div className="bg-red-500/10 w-full h-full flex items-center justify-center">
-                  <XOctagon fill="white" size={50} />
+                  <XOctagon color="white" size={50} />
                 </div>
               )}
             </div>

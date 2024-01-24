@@ -4,10 +4,12 @@ function ChannelItem({ index, logo, group, name }) {
   const {
     groups,
     channels,
+    playing,
     channelActiveIndex,
     setChannelActiveIndex,
     setPlayerState,
     setCurrentPlay,
+    setPlaying
   } = useGlobalStore();
 
   return (
@@ -16,6 +18,7 @@ function ChannelItem({ index, logo, group, name }) {
         setChannelActiveIndex(index);
         setPlayerState(1);
         setCurrentPlay(channels[index]);
+        if(!playing) setPlaying(true)
       }}
       className={`${
         channelActiveIndex === index ? "bg-white/30 shadow-xl" : "bg-white/5"
@@ -27,7 +30,7 @@ function ChannelItem({ index, logo, group, name }) {
 
       <div className="w-full h-full flex gap-5 p-3 items-start backdrop-blur-xl rounded-2xl">
         <img
-          className="aspect-square w-28 rounded-lg"
+          className="aspect-square object-cover w-28 rounded-lg"
           loading="lazy"
           src={logo}
         />

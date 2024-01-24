@@ -6,7 +6,7 @@ const useGlobalStore = create((set) => ({
   channels: [],
   groups: GROUPS,
   channelActiveIndex: 0,
-  groupActiveIndex: 2,
+  groupActiveIndex: 1,
   playing: false,
   playerState: 1,
   currentPlay: null,
