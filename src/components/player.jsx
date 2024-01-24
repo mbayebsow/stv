@@ -11,7 +11,6 @@ function Player() {
     setPlayerState,
   } = useGlobalStore();
 
-  console.log(currentPlay);
   return (
     channels.length > 0 && (
       <>
@@ -41,12 +40,13 @@ function Player() {
               height="100%"
               // onReady={() => setPlayerState(1)}
               // onBuffer={() => setPlayerState(2)}
-              onPlay={(v) => setPlayerState(2)}
+              onPlay={() => setPlayerState(2)}
+              onPause={() => setPlayerState(1)}
               onError={(v) => {
                 if (v === "hlsError") return;
                 setPlayerState(3);
               }}
-              playing
+              playing={playing}
             />
           )}
         </div>

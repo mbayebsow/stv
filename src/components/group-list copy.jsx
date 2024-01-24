@@ -1,11 +1,10 @@
 import { useRef, useState } from "react";
 import cn from "classnames";
-import useGlobalStore from "../stores/useGlobalStore.jsx"
+import useGlobalStore from "../stores/useGlobalStore.jsx";
 
 const GroupList = ({ data, leadingText }) => {
   const windowSize = useRef([window.innerWidth, window.innerHeight]);
-  const { groups, groupActiveIndex, setGroupActiveIndex } = useGlobalStore()
-
+  const { groups, groupActiveIndex, setGroupActiveIndex } = useGlobalStore();
 
   const halfwayIndex = Math.ceil(groups.length / 2);
   const itemHeight = 60;
@@ -55,17 +54,15 @@ const GroupList = ({ data, leadingText }) => {
   return (
     <div
       style={{ height: windowSize.current[1] }}
-      className="relative w-full flex flex-col gap-10"
+      className="relative w-2/5 flex flex-col gap-10"
     >
       {groups.map((group, i) => (
         <div
-        key={i}
+          key={i}
           onClick={() => setGroupActiveIndex(i)}
           className={cn(
             `w-full flex gap-5 items-center carousel-item absolute p-1 ${
-              groupActiveIndex === i
-                ? "opacity-100"
-                : "opacity-100"
+              groupActiveIndex === i ? "opacity-100" : "opacity-100"
             }`,
             {
               active: groupActiveIndex === i,
@@ -74,14 +71,18 @@ const GroupList = ({ data, leadingText }) => {
           )}
           style={{
             top: windowSize.current[1] / 2 + determinePlacement(i) / 2,
-            transform: `translateY(${determinePlacement(i) - windowSize.current[1]/15}px)`,
+            transform: `translateY(${
+              determinePlacement(i) - windowSize.current[1] / 15
+            }px)`,
           }}
         >
-          <div className={`w-full flex gap-5 items-start rounded-tl-full rounded-bl-full p-2 ${
+          <div
+            className={`w-full flex gap-5 items-start rounded-tl-full rounded-bl-full p-2 ${
               groupActiveIndex === i
                 ? "bg-gradient-to-r from-white/30"
                 : "bg-none"
-            }`}>
+            }`}
+          >
             <img
               className={`aspect-square w-14 rounded-full ${
                 groupActiveIndex === i ? "border-2" : "border-none"

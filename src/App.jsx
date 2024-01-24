@@ -1,9 +1,8 @@
 import { useState, useEffect } from "react";
 import channels from "./channels.json";
-import GroupList from "./components/group-list";
-import ChannelList from "./components/channel-list";
+import GroupList from "./components/groups/group-list";
+import ChannelList from "./components/channels/channel-list";
 import Player from "./components/player";
-import { Play } from "lucide-react";
 import PlayerControl from "./components/player-control";
 
 function App() {
@@ -70,13 +69,9 @@ function App() {
           inactive ? "-translate-x-full" : "translate-x-0"
         } h-screen w-screen transition-all p-0 bg-gradient-to-r from-black/90 duration-100 ease-out flex absolute left-0 top-0 bottom-0 z-50`}
       >
-        <div className="flex w-1/2 bg-white/10 overflow-hidden rounded-2xl shadow-2xl backdrop-blur-2xl relative z-0 pl-10">
-          <div className="w-2/5 h-screen">
-            <GroupList />
-          </div>
-          <div className="w-3/5 h-screen px-5">
-            <ChannelList />
-          </div>
+        <div className="flex w-1/2 bg-white/10 overflow-hidden backdrop-blur-2xl">
+          <GroupList />
+          <ChannelList />
         </div>
 
         <div className="w-1/2 h-screen bg-black/20">

@@ -1,8 +1,8 @@
-import { useRef, useState, useEffect } from "react";
+import { useRef, useEffect } from "react";
 import cn from "classnames";
 import useGlobalStore from "../stores/useGlobalStore.jsx";
 
-const ChannelList = ({ data, leadingText }) => {
+const ChannelList = () => {
   const windowSize = useRef([window.innerWidth, window.innerHeight]);
   const {
     channels,
