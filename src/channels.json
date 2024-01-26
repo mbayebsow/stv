@@ -6,30 +6,6 @@
     "url": "https://app.leatdev.com:70/skysport/index.m3u8"
   },
   {
-    "name": "Bein Afcon 1",
-    "group": 1,
-    "logo": "https://4.bp.blogspot.com/-IAwulVA2Q38/V84PCrLXL1I/AAAAAAAACM0/cjUacric4Fod_Fn0p0idVuRVz3uunG2dQCLcB/s1600/m5zn_e20e9c65fe4fe66.jpg",
-    "url": "http://fr.nettv.icu:80/live/bouchra002/gvqp3y5fhq/1035328.m3u8"
-  },
-  {
-    "name": "Bein Afcon 2",
-    "group": 1,
-    "logo": "https://4.bp.blogspot.com/-IAwulVA2Q38/V84PCrLXL1I/AAAAAAAACM0/cjUacric4Fod_Fn0p0idVuRVz3uunG2dQCLcB/s1600/m5zn_e20e9c65fe4fe66.jpg",
-    "url": "http://fr.nettv.icu:80/live/bouchra002/gvqp3y5fhq/1035329.m3u8"
-  },
-  {
-    "name": "Bein Afcon 3",
-    "group": 1,
-    "logo": "https://4.bp.blogspot.com/-IAwulVA2Q38/V84PCrLXL1I/AAAAAAAACM0/cjUacric4Fod_Fn0p0idVuRVz3uunG2dQCLcB/s1600/m5zn_e20e9c65fe4fe66.jpg",
-    "url": "http://fr.nettv.icu:80/live/bouchra002/gvqp3y5fhq/1037026.m3u8"
-  },
-  {
-    "name": "Bein Afcon 4",
-    "group": 1,
-    "logo": "https://4.bp.blogspot.com/-IAwulVA2Q38/V84PCrLXL1I/AAAAAAAACM0/cjUacric4Fod_Fn0p0idVuRVz3uunG2dQCLcB/s1600/m5zn_e20e9c65fe4fe66.jpg",
-    "url": "http://fr.nettv.icu:80/live/bouchra002/gvqp3y5fhq/1037030.m3u8"
-  },
-  {
     "name": "Info Sport",
     "url": "https://app.leatdev.com:70/infosport/index.m3u8",
     "logo": "https://telephone.fr/images/empresas/359353/m/infosport-.jpg",
@@ -38,13 +14,13 @@
   {
     "name": "Canal + Sport",
     "url": "https://app.leatdev.com:70/canalplus/index.m3u8",
-    "logo": "https://cdn.lesnumeriques.com/optim/news/15/156547/898959e0-comment-mycanal-ambitionne-d-etre-le-point-d-entree-unique-de-la-svod-en-france__1200_1200__809-0-2883-2074.jpeg",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Canal%2B_Sport_2015.png",
     "group": 1
   },
   {
     "name": "Canal + Sport 2",
     "url": "https://app.leatdev.com:70/canalplus2/index.m3u8",
-    "logo": "https://cdn.lesnumeriques.com/optim/news/15/156547/898959e0-comment-mycanal-ambitionne-d-etre-le-point-d-entree-unique-de-la-svod-en-france__1200_1200__809-0-2883-2074.jpeg",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Canal%2B_Sport_2_PL.png/800px-Canal%2B_Sport_2_PL.png",
     "group": 1
   },
   {
