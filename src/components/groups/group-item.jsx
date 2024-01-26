@@ -2,15 +2,16 @@ import React from "react";
 import useGlobalStore from "../../stores/useGlobalStore";
 
 function GroupItem({ index, image, name }) {
-  const { groupActiveIndex, setGroupActiveIndex } = useGlobalStore();
+  const { groupActiveIndex, setGroupActiveIndex, setChannelActiveIndex } = useGlobalStore();
 
   return (
     <div
-      onClick={() => setGroupActiveIndex(index)}
+      onClick={() => {
+        setGroupActiveIndex(index);
+        setChannelActiveIndex(0);
+      }}
       className={`w-full flex gap-5 items-start rounded-tl-full rounded-bl-full p-2 cursor-pointer ${
-        groupActiveIndex === index
-          ? "bg-gradient-to-r from-white/30"
-          : "bg-none"
+        groupActiveIndex === index ? "bg-gradient-to-r from-white/30" : "bg-none"
       }`}
     >
       <img

@@ -1,43 +1,28 @@
-import { Pause, Play, XOctagon } from "lucide-react";
+import { Loader, Pause, Play, XOctagon } from "lucide-react";
 import useGlobalStore from "../stores/useGlobalStore";
 
-function PlayerControl({inactive}) {
-  const {
-    groups,
-    channels,
-    currentPlay,
-    playerState,
-    channelActiveIndex,
-    setCurrentPlay,
-    setPlaying,
-  } = useGlobalStore();
+function PlayerControl({ inactive }) {
+  const { groups, currentPlay, playerState, channelActiveIndex, setPlaying } = useGlobalStore();
 
   return (
-    <div className={`${
+    currentPlay && (
+      <div
+        className={`${
           inactive ? "translate-x-full" : "translate-x-0"
-        } w-1/2 h-full flex flex-col justify-end p-10 bg-gradient-to-t from-black/90`}>
-      <div className="w-full flex items-center gap-5">
-        {channels.length > 0 && (
-          <>
-            <div className="font-bold text-[8vw]">{channelActiveIndex + 1}</div>
-            <div className="">
-              <div className="font-bold text-3xl">
-                {channels[channelActiveIndex].name}
-              </div>
-              <div>
-                {
-                  groups.find(
-                    (group) => group.id === channels[channelActiveIndex].group
-                  ).name
-                }
-              </div>
-            </div>
-            <div className="w-20 h-20 rounded-full backdrop-blur border overflow-hidden">
+        } w-1/2 h-full flex flex-col justify-end p-10 bg-gradient-to-t from-black`}
+      >
+        <div className="w-full h-fit flex  items-center justify-between w-full gap-5">
+          <div className="flex gap-5">
+            <div className="w-20 h-20 rounded-full backdrop-blur  overflow-hidden">
+              {currentPlay && playerState === 0 && (
+                <button className="bg-white/10 w-full h-full flex items-center justify-center animate-spin">
+                  <Loader color="white" size={50} />
+                </button>
+              )}
               {playerState === 1 && (
                 <button
                   onClick={() => {
                     if (!currentPlay) {
-                      setCurrentPlay(channels[channelActiveIndex]);
                       setPlaying(true);
                     } else {
                       setPlaying(true);
@@ -57,15 +42,22 @@ function PlayerControl({inactive}) {
                 </button>
               )}
               {playerState === 3 && (
-                <div className="bg-red-500/10 w-full h-full flex items-center justify-center">
+                <div className="bg-red-500 w-full h-full flex items-center justify-center">
                   <XOctagon color="white" size={50} />
                 </div>
               )}
             </div>
-          </>
-        )}
+
+            <div className="backdrop-blur rounded-full py-2 px-10 h-20 bg-white/10">
+              <div className="font-bold text-3xl">{currentPlay.name}</div>
+              <div>{groups.find((group) => group.id === currentPlay.group).name}</div>
+            </div>
+          </div>
+
+          <div className="font-bold text-[100px]">{channelActiveIndex + 1}</div>
+        </div>
       </div>
-    </div>
+    )
   );
 }
 

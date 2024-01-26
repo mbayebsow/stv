@@ -9,16 +9,16 @@ function ChannelItem({ index, logo, group, name }) {
     setChannelActiveIndex,
     setPlayerState,
     setCurrentPlay,
-    setPlaying
+    setPlaying,
   } = useGlobalStore();
 
   return (
     <div
       onClick={() => {
         setChannelActiveIndex(index);
-        setPlayerState(1);
+        setPlayerState(0);
         setCurrentPlay(channels[index]);
-        if(!playing) setPlaying(true)
+        if (!playing) setPlaying(true);
       }}
       className={`${
         channelActiveIndex === index ? "bg-white/30 shadow-xl" : "bg-white/5"
@@ -29,11 +29,7 @@ function ChannelItem({ index, logo, group, name }) {
       )}
 
       <div className="w-full h-full flex gap-5 p-3 items-start backdrop-blur-xl rounded-2xl">
-        <img
-          className="aspect-square object-cover w-28 rounded-lg"
-          loading="lazy"
-          src={logo}
-        />
+        <img className="aspect-square object-cover w-28 rounded-lg" loading="lazy" src={logo} />
         <div className="flex items-end justify-between h-full w-full">
           <div className="flex flex-col justify-between h-full w-fit">
             <div className="font-bold line-clamp-2 text-xl">{name}</div>

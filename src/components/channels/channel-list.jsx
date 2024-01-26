@@ -3,12 +3,10 @@ import useGlobalStore from "../../stores/useGlobalStore.jsx";
 import ChannelItem from "./channel-item.jsx";
 
 const ChannelList = () => {
-  const { channels, groupActiveIndex, setChannels, setChannelActiveIndex } = useGlobalStore();
-
+  const { channels, groupActiveIndex, setChannels } = useGlobalStore();
 
   useEffect(() => {
     setChannels();
-    setChannelActiveIndex(0);
   }, [groupActiveIndex]);
 
   return (
