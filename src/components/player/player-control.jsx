@@ -44,8 +44,10 @@ function PlayerControl({ inactive }) {
             )}
           </div>
 
-          <div className="backdrop-blur rounded-full py-2 px-10 h-20 bg-white/10">
-            <div className="font-bold text-3xl">{currentPlay.name}</div>
+          <div className="backdrop-blur rounded-full py-2 px-10 h-20 max-w-72 bg-white/10">
+            <div className="font-bold text-3xl line-clamp-1 whitespace-nowrap">
+              {currentPlay.name}
+            </div>
             <div>
               {groups.find((group) => group.id === currentPlay.group).name}
             </div>

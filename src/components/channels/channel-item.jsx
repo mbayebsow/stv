@@ -37,16 +37,10 @@ function ChannelItem({ revealref, className, index, logo, group, name }) {
           loading="lazy"
           src={logo}
         />
-        <div className="flex items-end justify-between h-full w-full">
-          <div className="flex flex-col justify-between h-full w-fit">
-            <div className="font-bold line-clamp-2 text-xl">{name}</div>
-            <div className="font-light text-sm opacity-50">
-              {groups.find((item) => item.id === group).name}
-            </div>
-          </div>
-
-          <div className="w-12 px-3 bg-white/10 font-bold rounded-full flex justify-center items-center">
-            {index + 1}
+        <div className="flex flex-col justify-between h-full w-fit">
+          <div className="font-bold line-clamp-2 text-xl">{name}</div>
+          <div className="font-light text-sm opacity-50">
+            {groups.find((item) => item.id === group).name}
           </div>
         </div>
       </div>
