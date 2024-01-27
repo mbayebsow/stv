@@ -1,9 +1,6 @@
-name: "build and publish"
+name: "build and publish desktop app"
 
-on:
-  push:
-    branches:
-      - release
+on: pull_request
 
 jobs:
   create-release:
@@ -40,7 +37,7 @@ jobs:
             })
             return data.id
 
-  build-desktop-app:
+  build-app:
     needs: create-release
     permissions:
       contents: write
@@ -76,11 +73,11 @@ jobs:
         with:
           releaseId: ${{ needs.create-release.outputs.release_id }}
 
-  publish-desktop-app:
+  publish-app:
     permissions:
       contents: write
     runs-on: ubuntu-20.04
-    needs: [create-release, build-tauri]
+    needs: [create-release, build-app]
 
     steps:
       - name: publish release
