@@ -1,8 +1,8 @@
 import { create } from "zustand";
 import { persist, createJSONStorage } from "zustand/middleware";
 
-import GROUPS from "../groups.json";
-import CHANNELS from "../channels.json";
+import GROUPS from "../data/groups.json";
+import CHANNELS from "../data/channels.json";
 
 const useGlobalStore = create(
   persist(
@@ -20,7 +20,8 @@ const useGlobalStore = create(
             (channel) => channel.group === GROUPS[state.groupActiveIndex].id
           ),
         })),
-      setGroupActiveIndex: (index) => set((state) => ({ groupActiveIndex: index })),
+      setGroupActiveIndex: (index) =>
+        set((state) => ({ groupActiveIndex: index })),
       setChannelActiveIndex: (index) => set({ channelActiveIndex: index }),
       setCurrentPlay: (channel) => set({ currentPlay: channel }),
       setPlayerState: (state) => set({ playerState: state }),

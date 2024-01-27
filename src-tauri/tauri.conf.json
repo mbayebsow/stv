@@ -7,7 +7,7 @@
     "distDir": "../dist"
   },
   "package": {
-    "productName": "stv",
+    "productName": "Stv",
     "version": "0.1.0"
   },
   "tauri": {
@@ -16,8 +16,8 @@
     },
     "bundle": {
       "active": true,
-      "category": "DeveloperTool",
-      "copyright": "",
+      "category": "Entertainment",
+      "copyright": "Mbaye Babacar",
       "deb": {
         "depends": []
       },
@@ -29,7 +29,7 @@
         "icons/icon.icns",
         "icons/icon.ico"
       ],
-      "identifier": "com.tauri.dev",
+      "identifier": "com.stv.desktop",
       "longDescription": "",
       "macOS": {
         "entitlements": null,
@@ -56,10 +56,10 @@
     "windows": [
       {
         "fullscreen": false,
-        "height": 600,
         "resizable": true,
-        "title": "stv",
-        "width": 800
+        "title": "Stv",
+        "width": 1024,
+        "height": 605
       }
     ]
   }

@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
 import cn from "classnames";
-import useGlobalStore from "../stores/useGlobalStore.jsx";
+import useGlobalStore from "../../stores/useGlobalStore.jsx";
 
 const GroupList = ({ data, leadingText }) => {
   const windowSize = useRef([window.innerWidth, window.innerHeight]);

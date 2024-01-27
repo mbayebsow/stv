@@ -1,6 +1,6 @@
 import { useRef, useEffect } from "react";
 import cn from "classnames";
-import useGlobalStore from "../stores/useGlobalStore.jsx";
+import useGlobalStore from "../../stores/useGlobalStore.jsx";
 
 const ChannelList = () => {
   const windowSize = useRef([window.innerWidth, window.innerHeight]);
